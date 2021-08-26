@@ -9,12 +9,13 @@ import Home from './components/Home'
 import Navigation from './components/Navigation'
 import NavigationForJavaScript from './components/NavigationForJavaScript'
 import Basic from "./modern-javascript/chap-01-basic/Basic";
+import HomePage from "./pages/HomePage";
 const App = () => (
   <>
   <Navigation/>
   <NavigationForJavaScript/>
     <Switch>
-    <Route exact path='/' component= { Home }/>
+    <Route exact path='/' component= { HomePage }/>
     <Redirect from='/home' to= { '/' }/>
     <Route exact path='/course-register' component= { CourseRegister }/>
     <Route exact path='/online-profile' component= { OnlineProfile }/>
@@ -23,7 +24,7 @@ const App = () => (
     <Route exact path='/school-status' component= { SchoolStatus }/>
 
     <Route exact path='/basic' component= { Basic }/>
-    
+
     </Switch></>
   )
 

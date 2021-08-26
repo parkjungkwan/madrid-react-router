@@ -16,6 +16,14 @@ const Basic = () => {
     }
 
     const jsonSample = () => {
+        const car = {
+            wheels: 4,
+            color: "red",
+            drive: () => { console.log('wroom wroom') }
+        }
+        console.log(Object.keys(car)[0])
+        console.log(typeof Object.keys(car)[0])
+        car.drive()
 
     }
 
