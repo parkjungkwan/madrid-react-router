@@ -2,8 +2,7 @@ import React from 'react'
 
 var man = {} // es5
 
-
-const Basic = () => {
+const Basic = a => {
     const letSample = () => {
         let tom = 'Tom' // es6 에서 variable
         const james = 'James' // es6 에서 constant
@@ -24,7 +23,6 @@ const Basic = () => {
         console.log(Object.keys(car)[0])
         console.log(typeof Object.keys(car)[0])
         car.drive()
-
     }
 
 
